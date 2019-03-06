@@ -7,8 +7,8 @@ from keras.models import Model
 from keras.optimizers import Adam
 from keras.regularizers import l2
 
-from keras_gat import GraphAttention
-from keras_gat.utils import load_data, preprocess_features
+from graph_attention_layer import GraphAttention
+from utils import load_data, preprocess_features
 
 # Read data
 A, X, Y_train, Y_val, Y_test, idx_train, idx_val, idx_test = load_data('cora')
